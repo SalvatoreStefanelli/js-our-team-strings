@@ -5,7 +5,19 @@ const name = ['Salvatore', 'Fabio', 'Gabriele', 'Alessio', 'Giovanni'];
 
 // MILESTONE 1:
 // Stampare le informazioni su DOM come card.
+const team = document.getElementById('team');
 
+for (let i = 0; i < name.length; i++) {
+    const element = name[i];    
+
+
+    const elementCard = document.createElement('div');
+    elementCard.className = ('card');
+
+    elementCard.append(element);
+
+    team.appendChild(elementCard);
+}
 
 // MILESTONE 3:
 // Aggiungere un evento click sulla card che aggiunge/rimuove una classe per evidenziare un componente del team.
