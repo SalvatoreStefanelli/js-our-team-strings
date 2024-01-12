@@ -17,10 +17,16 @@ for (let i = 0; i < name.length; i++) {
     elementCard.append(element);
 
     team.appendChild(elementCard);
-}
-
 // MILESTONE 3:
 // Aggiungere un evento click sulla card che aggiunge/rimuove una classe per evidenziare un componente del team.
+    elementCard.addEventListener('click', function(e) {
+        console.log(e.target);   
+        
+        e.target.classList.toggle('bg-success');
+    })
+}
+
+
 
 // BONUS 1:
 // In generale curare la parte di UI e organizzare i singoli membri in card/schede.
